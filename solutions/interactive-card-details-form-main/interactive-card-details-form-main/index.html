@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230409133634">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__imges imges">
+					<picture><source srcset="img/bg-card-front.webp" type="image/webp"><img class="imges_1" src="img/bg-card-front.png" alt=""></picture>
+					<picture><source srcset="img/bg-card-back.webp" type="image/webp"><img class="imges_2" src="img/bg-card-back.png" alt=""></picture>
+				</div>
+				<div class="page__main-block main-block">
+					<div class="main-block__cont5ainer">
+						<div class="confirmation" style="display: none;">
+							<div class="confirmation__icon"><img src="img/icon-complete.svg" alt=""></div>
+							<div class="confirmation__title">Thank you!</div>
+							<div class="confirmation__text">We've added your card details</div>
+							<button type="submit" class="confirmation__button">Continue</button>
+						</div>
+						<form action="#" class="main-block__form form">
+							<div class="form__section section-form">
+								<div class="section-form__title">Cardholder name</div>
+								<input type="text" name="form[card-name]" data-error="Error" placeholder="e.g. Jane Appleseed" class="section-form__input" required>
+							</div>
+							<div class="form__section section-form">
+								<div class="section-form__title">Card number</div>
+								<input type="text" name="form[card-name]" data-error="Wrong format, numbers only" placeholder="e.g. 1234 5678 9123 0000" class="section-form__input card-name-input" minlength="16" maxlength="16" data-required>
+							</div>
+							<div class="form__section section-form">
+								<div class="section-form__columns">
+									<div class="section-form__column">
+										<div class="section-form__title">EXp. date (MM/YY)</div>
+										<div class="section-form__items">
+											<input type="text" name="form[month]" data-error="Can`t be blank" placeholder="MM" class="section-form__input section-form__input_small" oninput="this.value = this.value.replace(/[^0-9]/g, '')" minlength="1" maxlength="2" data-required>
+											<input type="text" name="form[year]" data-error="Can`t be blank" placeholder="YY" class="section-form__input section-form__input_small" oninput="this.value = this.value.replace(/[^0-9]/g, '')" minlength="1" maxlength="2" data-required>
+										</div>
+									</div>
+									<div class="section-form__column">
+										<div class="section-form__title">CVC</div>
+										<input type="text" name="form[card-name]" data-error="Can`t be blank" placeholder="e.g. 123" class="section-form__input" oninput="this.value = this.value.replace(/[^0-9]/g, '')" minlength="3" maxlength="3" data-required>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="form__button">Confirm</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230409133634"></script>
+</body>
+
+</html>
