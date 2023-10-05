@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230423111317">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" target="_blank" class="header__logo logo">
+					<div class="logo__circle"></div>
+					<div class="logo__text-wrapper">
+						<div class="logo__text ml12">BASE</div>
+						<div class="logo__text ml13">APPAREL</div>
+					</div>
+				</a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__preloader preloader">
+				<div class="preloader__container">
+					<div class="preloader__body loading">
+						<svg class="loading__text">
+							<text x="15" y="calc((95/16)*1rem)">
+								<tspan class="loading__textto textto">A</tspan>
+								<tspan class="loading__textto textto">P</tspan>
+								<tspan class="loading__textto textto">P</tspan>
+								<tspan class="loading__textto textto">A</tspan>
+								<tspan class="loading__textto textto">R</tspan>
+								<tspan class="loading__textto textto">E</tspan>
+								<tspan class="loading__textto textto">L</tspan>
+							</text>
+						</svg>
+					</div>
+				</div>
+			</section>
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<div class="main-block__title">
+							<span>coming</span> <span>soon</span>
+							<svg class="main-block__title-svg title-svg">
+								<text x="15" y="calc((95/16)*1rem)">
+									<tspan class="title-svg__textto textto">W</tspan>
+									<tspan class="title-svg__textto textto">E</tspan>
+									<tspan class="title-svg__textto textto">'</tspan>
+									<tspan class="title-svg__textto textto">R</tspan>
+									<tspan class="title-svg__textto textto">E</tspan>
+								</text>
+							</svg>
+						</div>
+						<div class="main-block__text"> <span>Hello fellow shoppers! We're currently building our new </span>
+							<span>fashion store.
+								Add your email below to stay up-to-date with </span>
+							<span>announcements and our launch deals.</span>
+						</div>
+						<div class="main-block__confirmation confirmation" style="display: none;">
+							<div class="confirmation__title">Thank you for subscribing!</div>
+						</div>
+						<form class="main-block__form form" action="files/sendmail/sendmail.php" method="POST">
+							<input type="text" name="form[email]" data-error="Invalid email" placeholder="E-mail Adress" class="form__input" data-required>
+							<button type="submit" class="form__button"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="20">
+									<path fill="none" stroke="currentColor" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
+								</svg></button>
+						</form>
+					</div>
+					<div class="main-block__background background">
+						<div class="background__image-ibg"><picture><source srcset="img/deco.webp" type="image/webp"><img src="img/deco.jpg" alt=""></picture></div>
+					</div>
+					<div class="main-block__deco deco">
+						<div class="deco__overlay"></div>
+						<div class="deco__image-ibg"><picture><source srcset="img/deco.webp" type="image/webp"><img src="img/deco.jpg" alt=""></picture></div>
+					</div>
+					<div id="bg-image" class="main-block__right right">
+						<div class="right__image-ibg right__image-ibg
+                  right__image-ibg_1">
+							<picture><source srcset="img/bg-1.webp" type="image/webp"><img src="img/bg-1.jpg" alt=""></picture>
+						</div>
+						<div class="right__image-ibg right__image-ibg_2">
+							<picture><source srcset="img/bg-2.webp" type="image/webp"><img src="img/bg-2.jpg" alt=""></picture>
+						</div>
+						<div class="right__image-ibg right__image-ibg_3">
+							<picture><source srcset="img/bg-3.webp" type="image/webp"><img src="img/bg-3.jpg" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js?_v=20230423111317"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js?_v=20230423111317"></script>
+	<script src="js/app.min.js?_v=20230423111317"></script>
+</body>
+
+</html>
