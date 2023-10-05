@@ -1,0 +1,90 @@
+//<FORM>
+::placeholder {
+   /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: $baseApparelPrimary1;
+   opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+   /* Internet Explorer 10-11 */
+   color: $baseApparelPrimary1;
+}
+
+::-ms-input-placeholder {
+   /* Microsoft Edge */
+   color: $baseApparelPrimary1;
+}
+.form {
+   border: 1px solid $baseApparelPrimary1;
+   display: flex;
+   border-radius: calc((30 / 16) * 1rem);
+   &__row {
+   }
+   &__column {
+   }
+   &__line {
+   }
+   &__input {
+      width: 100%;
+      border: transparent;
+      font-size: 1rem;
+      padding: calc((19 / 16) * 1rem) calc((30 / 16) * 1rem);
+      background: rgba(208, 186, 139, 0.3);
+      border-radius: calc((30 / 16) * 1rem);
+      font-family: 'PP Neue Montreal', 'Josefin Sans', sans-serif;
+      letter-spacing: calc((1.5 / 16) * 1rem);
+      &:focus {
+         outline: 1px solid $FormColor;
+         &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $FormColor;
+            opacity: 1; /* Firefox */
+         }
+
+         &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $FormColor;
+         }
+
+         &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $FormColor;
+         }
+      }
+   }
+   &__button {
+      height: 100%;
+      background: transparent;
+      width: calc((102 / 16) * 1rem);
+      position: absolute;
+      right: 0;
+      border-radius: calc((30 / 16) * 1rem);
+      border: 1px solid $baseApparelPrimary1;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      svg {
+         color: $baseApparelPrimary1;
+         transition: all 0.4s ease;
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: $baseApparelPrimary1;
+            svg {
+               color: #fff;
+            }
+         }
+      }
+   }
+   &__error {
+      color: red;
+      font-weight: 700;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 130%;
+      left: 2%;
+      transition: all 0.3s ease 0s;
+   }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <div id="loading-screen" class="page__loading-screen">
+            <canvas id="canvas"></canvas>
+            <p><span>L</span>
+               <span>o</span>
+               <span>a</span>
+               <span>d</span>
+               <span>i</span>
+               <span>n</span>
+               <span>g</span>
+               <span>.</span>
+               <span>.</span>
+               <span>.</span>
+            </p>
+         </div>
+         <div data-preload class="page__carousel carousel">
+            <div class="carousel__container">
+               <div class="carousel__images">
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_10.webp" alt=""> </div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/watches/watch_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklesses/neckless_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/bracelets/bracelet_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/brooches/brooch_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/earrings/earring_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/necklines/neckline_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/piercings/piercing_12.webp" alt=""></div>
+                  </div>
+                  <div class="carousel__image-block">
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_1.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_2.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_3.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_4.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_5.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_6.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_7.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_8.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_9.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_10.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_11.webp" alt=""></div>
+                     <div class="carousel__image-ibg"><img src="@img/rings/ring_12.webp" alt=""></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="page__circle circle"></div>
+         <section class="page__main-block main-block">
+         <div data-prlx-mouse data-prlx-cx="1000" data-prlx-cy="1000" class="background-ibg"><img src="@img/main-block/backgound.webp" alt=""></div>
+            <div class="main-block__container">
+               <div class="main-block__body">
+                  <div data-prlx data-coefficient="100" data-direction="1" class="main-block__women">
+                     <div data-prlx-mouse data-prlx-cx="700" data-prlx-cy="1000" class="main-block__women-ibg"><img src="@img/main-block/women.webp" alt=""></div>
+                  </div>
+                  <div class="main-block__contact-block contact-block">
+                     <h1 class="contact-block__title">
+                        <svg class="contact-block__title-svg title-svg">
+                           <text x="15" y="calc((95/16)*1rem)">
+                              <tspan class="title-svg__textto textto">W</tspan>
+                              <tspan class="title-svg__textto textto">E</tspan>
+                              <tspan class="title-svg__textto textto">'</tspan>
+                              <tspan class="title-svg__textto textto">R</tspan>
+                              <tspan class="title-svg__textto textto">E</tspan>
+                           </text>
+                        </svg>
+                        <span>coming soon</span>
+                     </h1>
+                     <div class="contact-block__text"> <span>Hello fellow shoppers! We're currently building our new
+                        </span>
+                        <span>fashion store.
+                           Add your email below to stay up-to-date with </span>
+                        <span>announcements and our launch deals.</span>
+                     </div>
+                     <div class="contact-block__confirmation confirmation" style="display: none;">
+                        <div class="confirmation__title">Thank you for subscribing!</div>
+                     </div>
+                     <form class="contact-block__form form" action="files/sendmail/sendmail.php" method="POST">
+                        <input type="text" name="form[email]" data-error="Invalid email" placeholder="E-mail Adress"
+                           class="form__input" data-required>
+                        <button type="submit" class="form__button"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                              height="20">
+                              <path fill="none" stroke="currentColor" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
+                           </svg></button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   </div>
+   @@include('html/_js.htm',{})
+</body>
+
+</html>

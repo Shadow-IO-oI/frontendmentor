@@ -1,0 +1,106 @@
+// Headings, common BEM blocks, and more...
+.page {
+   // .page__carousel
+   &__carousel {
+   }
+   // .page__circle
+   &__circle {
+   }
+   // .page__loading-screen
+   &__loading-screen {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      @include adaptiveValue('padding-bottom', 50, 10);
+      @include adaptiveValue('padding-right', 50, 10);
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: end;
+      gap: 15px;
+      color: $FormColor;
+      canvas {
+         width: 95px;
+         height: 95px;
+      }
+      p {
+         text-transform: uppercase;
+      }
+      span{
+         display: inline-block;
+         animation: wave 1s infinite linear; 
+         &:nth-child(2) {
+            animation-delay: 0.1s;
+         }
+
+         &:nth-child(3) {
+            animation-delay: 0.2s;
+         }
+         &:nth-child(4) {
+            animation-delay: 0.3s;
+         }
+
+         &:nth-child(5) {
+            animation-delay: 0.4s;
+         }
+
+         &:nth-child(6) {
+            animation-delay: 0.5s;
+         }
+
+         &:nth-child(7) {
+            animation-delay: 0.6s;
+         }
+         &:nth-child(8) {
+            animation-delay: 0.7s;
+         }
+         &:nth-child(9) {
+            animation-delay: 0.8s;
+         }
+         &:nth-child(10) {
+            animation-delay: 0.9s;
+         }
+      }
+   }
+   // .page__main-block
+   &__main-block {
+   }
+}
+
+@keyframes wave {
+   0% {
+      transform: translate(0px, 0px);
+   }
+   50% {
+      transform: translate(0px, 5px);
+   }
+   100% {
+      transform: translate(0px, 0px);
+   }
+}
+//====================================================================================================
+.circle {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   opacity: 0;
+   transform: translate(-50%, -50%);
+   border: 0.25rem solid $baseApparelPrimary1;
+   height: calc((44 / 16) * 1rem);
+   aspect-ratio: 1/1;
+   border-radius: 50%;
+   margin-right: calc((15 / 16) * 1rem);
+}
+//====================================================================================================
+.background-ibg {
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+   filter: brightness(0.5) hue-rotate(50deg) blur(2px);
+}
+//====================================================================================================
