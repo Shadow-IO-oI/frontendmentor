@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230611200036">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto=".about" class="menu__link">About</a></li>
+							<li class="menu__item"><a href="#" data-goto=".discover" class="menu__link">Discover</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Get Started</a></li>
+							<label class="menu__switch switch">
+								<input type="checkbox">
+								<span class="switch__slider"></span>
+							</label>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<div class="x-shape"></div>
+					</button>
+					<section class="popup__body">
+						<h3 class="popup__title">Back this project</h3>
+						<div class="popup__description description">Want to support us in bringing Mastercraft Bamboo Monitor Riser
+							out in the
+							world?</div>
+						<div class="popup__items">
+							<article class="popup__item item-popup">
+								<input type="radio" class="item-popup__radio-btn" name="item" value="Bamboo_Stand" id="no-reward">
+								<label class="item-popup__label" for="no-reward">
+									<div class="item-popup__indicator"></div>
+									<h4 class="item-popup__name name">Pledge with no reward</h4>
+									<p class="item-popup__pledge pledge"></p>
+									<div class="item-popup__left left"><span></span></div>
+									<p class="item-popup__description description">Choose to support us without a reward if you simply believe in our project. As a backer,
+										you will be signed up to receive product updates via email.
+									</p>
+								</label>
+								<form action="#" class="item-popup__form form">
+									<div class="form__text">Enter your pledge </div>
+									<div class="form__input">
+										<input autocomplete="off" name="form[pledge]" type="text" placeholder="" data-error='&#x1F641;' minlength="1" oninput="this.value = this.value.replace(/[^0-9]/g, '')" data-required>
+									</div>
+									<button type="submit" class="form__button button button_mor">Continue</button>
+								</form>
+							</article>
+							<article class="popup__item item-popup">
+								<input type="radio" class="item-popup__radio-btn" name="item" value="Bamboo_Stand" id="Bamboo_Stand">
+								<label class="item-popup__label" for="Bamboo_Stand">
+									<div class="item-popup__indicator"></div>
+									<h4 class="item-popup__name name">Bamboo Stand</h4>
+									<p class="item-popup__pledge pledge">Pledge $25 or more</p>
+									<div class="item-popup__left left">101<span>left</span></div>
+									<p class="item-popup__description description">You get an ergonomic stand made of natural bamboo.
+										You've helped
+										us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+								</label>
+								<form action="#" class="item-popup__form form">
+									<div class="form__text">Enter your pledge </div>
+									<div class="form__input">
+										<input autocomplete="off" name="form[pledge]" type="text" placeholder="25" minlength="1" maxlength="4" oninput="this.value = this.value.replace(/[^0-9]/g, '')" data-min-value="25" data-required>
+									</div>
+									<button type="submit" class="form__button button button_mor">Continue</button>
+								</form>
+							</article>
+							<article class="popup__item item-popup">
+								<input type="radio" class="item-popup__radio-btn" name="item" value="Black_Edition_Stand" id="Black_Edition_Stand">
+								<label class="item-popup__label" for="Black_Edition_Stand">
+									<div class="item-popup__indicator"></div>
+									<h4 class="item-popup__name name">Black Edition Stand</h4>
+									<p class="item-popup__pledge pledge">Pledge $75 or more</p>
+									<div class="item-popup__left left">64<span>left</span></div>
+									<p class="item-popup__description description">
+										You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our
+										Backer
+										member list. Shipping is included.
+									</p>
+								</label>
+								<form action="#" class="item-popup__form form">
+									<div class="form__text">Enter your pledge </div>
+									<div class="form__input">
+										<input autocomplete="off" name="form[pledge]" type="text" placeholder="75" minlength="1" maxlength="4" oninput="this.value = this.value.replace(/[^0-9]/g, '')" data-min-value="75" data-required>
+									</div>
+									<button type="submit" class="form__button button button_mor">Continue</button>
+								</form>
+							</article>
+							<article class="popup__item item-popup out-of-stock ">
+								<input type="radio" class="item-popup__radio-btn" name="item" value="Mahogany_Special_Edition" id="Mahogany_Special_Edition">
+								<label class="item-popup__label" for="Mahogany_Special_Edition">
+									<div class="item-popup__indicator"></div>
+									<h4 class="item-popup__name name">Mahogany Special Edition</h4>
+									<p class="item-popup__pledge pledge">Pledge $200 or more</p>
+									<div class="item-popup__left left">0<span>left</span></div>
+									<p class="item-popup__description description">
+										You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll
+										be added
+										to our Backer member list. Shipping is included.
+									</p>
+								</label>
+								<form action="#" class="item-popup__form form">
+									<div class="form__text">Enter your pledge </div>
+									<div class="form__input">
+										<input autocomplete="off" name="form[pledge]" type="text" placeholder="200" minlength="1" maxlength="4" oninput="this.value = this.value.replace(/[^0-9]/g, '')" data-min-value="200" data-required>
+									</div>
+									<button type="submit" class="form__button button button_mor">Continue</button>
+								</form>
+							</article>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<div id="confirmation-popup" aria-hidden="true" class="confirmation-popup popup">
+			<div class="popup__wrapper">
+				<div class="popup__content confirmation-popup__content">
+					<section class="popup__body confirmation-popup__body">
+						<div class="confirmation-popup__img">
+							<img src="img/logo_2.svg" alt="">
+						</div>
+						<div class="confirmation-popup__title title">
+							Thanks for your support!
+						</div>
+						<div class="confirmation-popup__text description">
+							Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+							an email once our campaign is completed.
+						</div>
+					</section>
+					<button data-close type="button" class="confirmation-popup__close button button_mor">
+						Got it!
+					</button>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<div class="page__get-started get-started">
+				<div class="get-started__container">
+					<div class="get-started__body">
+						<article class="get-started__company company block">
+							<a href="#" class="company__logo"><img src="img/logo_2.svg" alt="logo"></a>
+							<h1 class="company__title">Mastercraft Bamboo Monitor Riser</h1>
+						</article>
+						<div class="get-started__progress progress block">
+							<div class="progress__top">
+								<div class="progress__value">
+									<div class="progress__earned">$89,914</div>
+									<div class="progress__needed"><span>Of</span>$100,000</div>
+								</div>
+								<div class="progress__bar"><span></span></div>
+							</div>
+							<div class="progress__progress-bottom progress-bottom">
+								<div class="progress-bottom__column">
+									<div class="progress-bottom__value">5,007</div>
+									<div class="progress-bottom__description">total backers</div>
+								</div>
+								<div class="progress-bottom__line"></div>
+								<div class="progress-bottom__column">
+									<div class="progress-bottom__value">56</div>
+									<div class="progress-bottom__description">days left</div>
+								</div>
+								<div class="progress-bottom__actions">
+									<button type="submit" class="progress-bottom__bookmark-button button button_bookmark"><span>
+											<ion-icon name="bookmark-outline"></ion-icon>
+										</span>
+										Bookmark
+									</button>
+									<button data-popup=".popup" type="submit" class="progress-bottom__project-button button button_green">Back this
+										project</button>
+								</div>
+							</div>
+						</div>
+						<div class="get-started__slider swiper block">
+							<div class="get-started__wrapper swiper-wrapper">
+								<div class="get-started__slide swiper-slide swiper-slide-ibg"><picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt=""></picture>
+								</div>
+								<div class="get-started__slide swiper-slide swiper-slide-ibg"><picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.webp" alt=""></picture>
+								</div>
+								<div class="get-started__slide swiper-slide swiper-slide-ibg"><picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.jpg" alt=""></picture>
+								</div>
+							</div>
+							<div class="swiper-actions">
+								<button type="button" class="swiper-button-prev"><svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+										<g stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
+											<circle cx="8.5" cy="8.5" r="8" />
+											<path d="m11.5 9.5-3-3-3 3" />
+										</g>
+									</svg></button>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="swiper-button-next"><svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+										<g stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
+											<circle cx="8.5" cy="8.5" r="8" />
+											<path d="m11.5 9.5-3-3-3 3" />
+										</g>
+									</svg></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 class="about__title">About this project</h2>
+					<div class="about__text">
+						<p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to
+							a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+							your posture and make you more comfortable while at work, helping you stay focused on the task at
+							hand.</p>
+						<p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your
+							computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+					</div>
+				</div>
+			</section>
+			<section class="page__discover discover">
+				<div class="discover__container">
+					<div class="discover__goods ">
+						<article class="discover__article article-discover block-deep">
+							<div class="article-discover__heading">
+								<h3 class="article-discover__name name">Bamboo Stand</h3>
+								<div class="article-discover__pledge pledge">Pledge $25 or more</div>
+							</div>
+							<p class="article-discover__description description">You get an ergonomic stand made of natural bamboo. You've
+								helped us launch our promotional campaign, and you’ll be added to a special Backer member list.
+							</p>
+							<div class="article-discover__bottom">
+								<div class="article-discover__left left">101<span>left</span></div>
+								<button type="submit" class="article-discover__button button button_green">Select
+									Reward</button>
+							</div>
+						</article>
+						<article class="discover__article article-discover block-deep">
+							<div class="article-discover__heading">
+								<h3 class="article-discover__name name">Black Edition Stand</h3>
+								<div class="article-discover__pledge pledge">Pledge $75 or more</div>
+							</div>
+							<p class="article-discover__description description">You get a Black Special Edition computer stand and a
+								personal thank you. You’ll be added to our Backer
+								member list. Shipping is included.
+							</p>
+							<div class="article-discover__bottom">
+								<div class="article-discover__left left">64<span>left</span></div>
+								<button type="submit" class="article-discover__button button button_green">Select
+									Reward</button>
+							</div>
+						</article>
+						<article class="discover__article article-discover block-deep">
+							<div class="article-discover__heading">
+								<h3 class="article-discover__name name">Bamboo Stand</h3>
+								<div class="article-discover__pledge pledge">Pledge $25 or more</div>
+							</div>
+							<p class="article-discover__description description">You get an ergonomic stand made of natural bamboo. You've
+								helped us launch our promotional campaign, and you’ll be added to a special Backer member list.
+							</p>
+							<div class="article-discover__bottom">
+								<div class="article-discover__left left">101<span>left</span></div>
+								<button type="submit" class="article-discover__button button button_green">Select
+									Reward</button>
+							</div>
+						</article>
+						<article class="discover__article article-discover out-of-stock block-deep">
+							<div class="article-discover__heading">
+								<h3 class="article-discover__name name">Mahogany Special</h3>
+								<div class="article-discover__pledge pledge">Pledge $200 or more</div>
+							</div>
+							<p class="article-discover__description description">You get two Special Edition Mahogany stands, a Backer
+								T-Shirt, and a personal thank you. You’ll be added
+								to our Backer member list. Shipping is included.
+							</p>
+							<div class="article-discover__bottom">
+								<div class="article-discover__left left">0<span>left</span></div>
+								<button type="submit" class="article-discover__button button button_green">Out of Stock</button>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<picture><source srcset="img/fox.webp" type="image/webp"><img src="img/fox.png" alt=""></picture>
+				<div class="footer__attribution attribution block-deep">
+					Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+					Coded by <a href="https://www.frontendmentor.io/profile/Shadow-IO-oI">Shadow</a>.
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js?_v=20230611200036"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js?_v=20230611200036"></script>
+	<script src="js/app.min.js?_v=20230611200036"></script>
+</body>
+
+</html>
